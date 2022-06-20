@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bank-project-examples.iml" filepath="$PROJECT_DIR$/.idea/bank-project-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../emlakkatılım/YAYGINLASTIRMA_V03/discovery-microservice/discovery-microservice.iml" filepath="$PROJECT_DIR$/../emlakkatılım/YAYGINLASTIRMA_V03/discovery-microservice/discovery-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yayginlastirma/emlak-katilim/emlak-katilim.iml" filepath="$PROJECT_DIR$/../yayginlastirma/emlak-katilim/emlak-katilim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldap/ldap.iml" filepath="$PROJECT_DIR$/ldap/ldap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../emlakkatılım/YAYGINLASTIRMA_V03/ldap-microservice/ldap-microservice.iml" filepath="$PROJECT_DIR$/../emlakkatılım/YAYGINLASTIRMA_V03/ldap-microservice/ldap-microservice.iml" />
+    </modules>
+  </component>
+</project>
