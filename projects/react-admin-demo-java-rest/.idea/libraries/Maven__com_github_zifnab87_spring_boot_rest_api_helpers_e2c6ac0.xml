@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.zifnab87:spring-boot-rest-api-helpers:e2c6ac0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/zifnab87/spring-boot-rest-api-helpers/e2c6ac0/spring-boot-rest-api-helpers-e2c6ac0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/zifnab87/spring-boot-rest-api-helpers/e2c6ac0/spring-boot-rest-api-helpers-e2c6ac0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/zifnab87/spring-boot-rest-api-helpers/e2c6ac0/spring-boot-rest-api-helpers-e2c6ac0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

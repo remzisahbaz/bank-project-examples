@@ -19,8 +19,6 @@ public class ModelMapperConfig {
     private static final Converter<UserRegisterRequest, User> USER_REGISTER_REQUEST_CONVERTED_TO_USER =
             (context -> {
                 var source= context.getSource();
-                CharSequence charSequence= source.getPassword();
-               System.out.println("*************"+passwordEncoder.encode(charSequence));
                 User user= User.builder()
                         .userName(source.getUserName())
                         .password(passwordEncoder.encode(source.getPassword()))

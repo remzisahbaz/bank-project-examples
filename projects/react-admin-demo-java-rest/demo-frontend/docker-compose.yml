@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  demo-frontend:
+    build:
+      context: .
+    volumes:
+      - .:/demo-frontend
+    container_name: demo_frontend
+    ports:
+      - "3000:3000"
+    image:
+      demo_frontend:react
+    command: npm start
