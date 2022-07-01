@@ -1,0 +1,44 @@
+version: '3.1'
+services:
+
+  #database :postgresql
+  demo-postgresql:
+    image: postgres:alpine
+    container_name: demo-postgresql
+
+    ports:
+      - "5432:5432"
+    environment:
+      - DB_SERVER=demo-postgresql
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=demo2
+
+    #backend app
+  demo-backend:
+    container_name: demo-backend
+#    image: spring_app
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    environment:
+      - DB_SERVER=demo-postgresql
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=demo2
+    ports:
+      - "8080:8080"
+    links:
+      - demo-postgresql
+
+  #frontend UI :ReactTS
+  #demo-frontend:
+    #build :
+      #context :./
+    #port:
+      #4000:4000
+    #link:
+      #-postgreSQL
+
+
+

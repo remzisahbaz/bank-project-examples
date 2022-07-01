@@ -1,0 +1,40 @@
+version: '3.1'
+services:
+
+  #database :postgresql
+  spring-security:
+    image: postgres:alpine
+    container_name: spring-security
+    ports:
+      - "5432:5432"
+    environment:
+      #      - DB_SERVER=
+      - POSTGRES_DB=userdatabase
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+
+
+    #backend app
+  spring-security-backend:
+    container_name: backend
+    image: spring_app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+    ports:
+      - "2002:2002"
+    depends_on:
+      - spring-security
+
+      #frontend UI :React
+      #frontend:
+      #build :
+      #context :./
+      #port:
+      #4000:4000
+      #link:
+      #-postgreSQL
+
+
+

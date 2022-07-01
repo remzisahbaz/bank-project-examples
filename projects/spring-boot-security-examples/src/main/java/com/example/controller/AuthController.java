@@ -45,6 +45,9 @@ public class AuthController {
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest){
 
         var verify=verifyUserName(loginRequest);
+        System.out.println(passwordEncoder.encode(loginRequest.getPassword()));
+      //  System.out.println(passwordEncoder.(verify.get().getPassword()));
+
         if(verify.isPresent()) {
         /*    if(verifyPassword(verify.get(),loginRequest).booleanValue()){
 

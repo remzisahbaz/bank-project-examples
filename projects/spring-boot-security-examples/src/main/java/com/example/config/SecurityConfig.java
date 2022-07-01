@@ -96,7 +96,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                .authorizeRequests() //dışarıdan istekler geldiğinde
                .antMatchers("/auth/**") //"auth/**" altında gelen bütün isteklere
                .permitAll()// izin ver
-               .antMatchers("admin/**") // "admin/**" altında gelen istekler
+               .antMatchers("/admin/**") // "admin/**" altında gelen istekler
                .hasAnyAuthority("admin")// admin rolüne sahipse erişebilir
                .anyRequest().authenticated()//" auth/ **" dışından gediyse authenticated olması gerekir.
                 ;
