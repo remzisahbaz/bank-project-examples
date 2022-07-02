@@ -47,4 +47,10 @@ public class UserController {
         QueryParamWrapper wrapper = QueryParamExtractor.extract(filterStr, rangeStr, sortStr);
         return filterService.filterBy(wrapper, repo);
     }
+
+    @GetMapping("/index")
+    public String index(){
+
+        return "hello remzi";
+    }
 }

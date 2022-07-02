@@ -11,7 +11,7 @@ import java.util.List;
 
 @PrimaryKeyJoinColumn(name="id")
 @Entity
-@Where(clause="published=1")
+@Where(clause="published=true")
 public class Client extends PlatformUser {
     public String role = getUserRole().getRole().toString().toLowerCase();
 

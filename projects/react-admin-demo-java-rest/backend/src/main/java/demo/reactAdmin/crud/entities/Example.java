@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Where(clause="published=1")
+@Where(clause="published=true")
 public class Example {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

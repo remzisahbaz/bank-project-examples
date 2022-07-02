@@ -6,7 +6,7 @@ import org.hibernate.annotations.Where;
 import javax.persistence.*;
 
 @Entity
-@Where(clause="published=1")
+@Where(clause="published=true")
 public class Category {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;

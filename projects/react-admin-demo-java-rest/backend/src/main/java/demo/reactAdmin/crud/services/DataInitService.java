@@ -1,6 +1,7 @@
 package demo.reactAdmin.crud.services;
 
 
+
 import demo.reactAdmin.auth.PasswordEncoderProvider;
 import demo.reactAdmin.crud.entities.Group;
 import demo.reactAdmin.crud.entities.PlatformUser;
@@ -107,7 +108,7 @@ public class DataInitService {
         PlatformUser admin = new PlatformUser();
         admin.username = "demo";
         admin.password = passEncodeProvider.getEncoder().encode("demo");
-        userRepository.save(admin);
+        //userRepository.save(admin);
 
 
         File dataFile = new File(context.getRealPath("//WEB-INF/uploaded/data.json"));

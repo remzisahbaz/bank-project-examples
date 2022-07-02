@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Set;
 @Inheritance(strategy = InheritanceType.JOINED)
 @Entity
-@Where(clause="published=1")
+@Where(clause="published=true")
 @Table( uniqueConstraints =  {
     @UniqueConstraint(columnNames = {"username"}),
 })

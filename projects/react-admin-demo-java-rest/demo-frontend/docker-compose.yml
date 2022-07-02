@@ -3,11 +3,10 @@ services:
   demo-frontend:
     build:
       context: .
-    volumes:
-      - .:/demo-frontend
+      dockerfile: Dockerfile
     container_name: demo_frontend
     ports:
       - "3000:3000"
     image:
-      demo_frontend:react
+      demo_frontend
     command: npm start
